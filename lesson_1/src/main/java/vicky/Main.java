@@ -1,4 +1,4 @@
-package com.vicky;
+package vicky;
 
 import java.util.Arrays;
 import java.util.Random;
