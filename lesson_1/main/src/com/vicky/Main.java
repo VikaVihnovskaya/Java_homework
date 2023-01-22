@@ -44,25 +44,11 @@ public class Main {
         return n;
     }
 
-    private static int[] createGroupedArray(int maxValue, int i, int n, Integer evenPosition, Integer oddPosition) {
-        int[] array = new int[maxValue - i];
-        for (int j = i; j < maxValue; j++) {
-            if (j % n == 0) {
-                array[evenPosition] = j;
-                evenPosition++;
-            } else {
-                array[oddPosition] = j;
-                oddPosition--;
-            }
-        }
-        return array;
-    }
-
     private static void reverseArray(int[] array) {
         int i = 0;
         int j = array.length - 1;
         int currentValue = 0;
-        while (i != j) {
+        while (i <= j) {
             currentValue = array[j];
             array[j] = array[i];
             array[i] = currentValue;
